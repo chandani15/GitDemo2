@@ -1,0 +1,15 @@
+2024-03-01 15:11:40,158 : INFO : test_e2e : Starting the test e2e
+2024-03-01 15:11:41,797 : INFO : test_e2e : product name found: Samsung Note 8
+2024-03-01 15:11:41,995 : INFO : test_e2e : product name found: Nokia Edge
+2024-03-01 15:11:47,874 : INFO : test_e2e : ×
+Success! Thank you! Your order will be delivered in next few weeks :-).
+2024-03-01 15:14:40,591 : INFO : test_e2e : Starting the test e2e
+2024-03-01 15:14:42,354 : INFO : test_e2e : product name found: Samsung Note 8
+2024-03-01 15:14:42,544 : INFO : test_e2e : product name found: Nokia Edge
+2024-03-01 15:14:48,450 : INFO : test_e2e : ×
+Success! Thank you! Your order will be delivered in next few weeks :-).
+2024-03-01 21:57:21,575 : INFO : test_e2e : Starting the test e2e
+2024-03-01 21:57:23,821 : INFO : test_e2e : product name found: Samsung Note 8
+2024-03-01 21:57:24,031 : INFO : test_e2e : product name found: Nokia Edge
+2024-03-01 21:57:30,580 : INFO : test_e2e : ×
+Success! Thank you! Your order will be delivered in next few weeks :-).

@@ -1,0 +1,37 @@
+#made a package tests
+#made a file test_e2e.py
+#have a class TestOne and the method test_e2e in that file
+#remove the browser invocation code from that method and put in conftest.py by craeting a setup fixture
+#put the scope of fixture setup to class
+#put @pytest.mark.usefixture("setup") on top of class TestOne in the teste2e.py file
+
+to return the driver from fixture:
+#we cannot do return driver because e can have yield
+#do request.cls.driver = driver
+#now do self.driver in the method test_e2e in Class TestOne.
+    as driver now becomes the class variable for the class who is calling the setup fixture.
+
+to remove fixture information from test_e2e.py
+#have a BaseClass which will do @pytest.mark.usefixture("setup")
+#inherit this BaseClass in the TestOne class in test_e2e.py
+
+to pass cmd line argument
+#add to conftest.py, def pytest_addoption(parser): parser.addoption("--bname", action="store", "default"="chrome")
+#in the setup fixture, retrive this by request.config.getoption("bname")
+
+page object model
+#define a class for each page with the page name
+#put all the locators on that page as class variables
+#define a constructor which will take the driver
+#define methods that will return the line like eg: driver.find_element(*Homepage.shop)
+#in the actual testcase: create a object of the above class. pass the driver when creating the object
+#call the method to perform the function
+#to be smart, when the last function is done on the page, create an object for nect page in that function only and return
+#this way the main test case code not only 1st page object creation (Eg. checkoutpage = homepage.click_shop())
+
+to take dynamic data
+#can pass using fixtures having params argument
+#return request.params
+#pass the fixture name as argument to testcase
+#Create a testdata class having the test data and access in fixture which in turn passes to test case
+#eg test_homepage.py
