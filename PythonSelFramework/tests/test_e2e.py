@@ -69,3 +69,6 @@ class TestOne(BaseClass):
 
     def added_function(self):
         print("Just Testing")
+
+    def added_develop_function(self):
+        print("Develop")
