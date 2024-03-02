@@ -72,3 +72,4 @@ class TestOne(BaseClass):
 
     def added_develop_function(self):
         print("Develop")
+        print("Git Stuff2 added this")
