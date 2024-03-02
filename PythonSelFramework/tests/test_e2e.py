@@ -67,3 +67,5 @@ class TestOne(BaseClass):
         logger.info(message)
         assert "Success!" in message
 
+    def added_function(self):
+        print("Just Testing")
